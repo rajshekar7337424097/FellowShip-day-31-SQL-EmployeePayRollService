@@ -1,0 +1,18 @@
+mysql> show databases;
++------------------------+
+| Database               |
++------------------------+
+| addressbook_service_db |
+| employee_db            |
+| employee_table         |
+| information_schema     |
+| mysql                  |
+| payroll_service        |
+| performance_schema     |
+| sakila                 |
+| sys                    |
+| world                  |
++------------------------+
+10 rows in set (0.01 sec)
+
+mysql>
