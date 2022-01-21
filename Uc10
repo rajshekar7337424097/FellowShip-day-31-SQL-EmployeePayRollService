@@ -1,0 +1,9 @@
+mysql> select count(first_name) from  address_book;
++-------------------+
+| count(first_name) |
++-------------------+
+|                 4 |
++-------------------+
+1 row in set (0.01 sec)
+
+mysql>
