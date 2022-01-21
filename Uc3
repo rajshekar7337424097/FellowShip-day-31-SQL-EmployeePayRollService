@@ -1,0 +1,18 @@
+mysql> insert into address_book (first_name, last_name, address, city, state, zip, phone_number, Email) values
+    -> ("ramesh", "kulkarni", "madhuraNagar", "chennai", "tamil nadu", "5000093", "9080712334", "ramesh@gmail.com"),
+    -> ("suresh", "Reddy", "Ashok nagar", "hyderabad", "telangana", "500069", "9070012345", "suresh2@gmail.com"), (
+    -> "dinesh", "kumar", "rajendra nagar", "guntur", "Andhra pradesh", "500903", "9060612345", "dinesh@gmail.com");
+Query OK, 3 rows affected (0.03 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> select * from address_book;
++----+------------+-----------+----------------+-----------+----------------+---------+--------------+-------------------+
+| id | first_name | last_name | address        | city      | State          | zip     | phone_number | Email             |
++----+------------+-----------+----------------+-----------+----------------+---------+--------------+-------------------+
+|  1 | ramesh     | kulkarni  | madhuraNagar   | chennai   | tamil nadu     | 5000093 | 9080712334   | ramesh@gmail.com  |
+|  2 | suresh     | Reddy     | Ashok nagar    | hyderabad | telangana      | 500069  | 9070012345   | suresh2@gmail.com |
+|  3 | dinesh     | kumar     | rajendra nagar | guntur    | Andhra pradesh | 500903  | 9060612345   | dinesh@gmail.com  |
++----+------------+-----------+----------------+-----------+----------------+---------+--------------+-------------------+
+3 rows in set (0.00 sec)
+
+mysql>
