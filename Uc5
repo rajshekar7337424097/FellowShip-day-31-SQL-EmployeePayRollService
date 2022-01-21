@@ -1,0 +1,22 @@
+
+mysql> select * from address_book;
++----+------------+-----------+--------------+-----------+----------------+---------+--------------+-------------------+
+| id | first_name | last_name | address      | city      | State          | zip     | phone_number | Email             |
++----+------------+-----------+--------------+-----------+----------------+---------+--------------+-------------------+
+|  1 | ramesh     | kulkarni  | madhuraNagar | chennai   | tamil nadu     | 5000093 | 9080712334   | ramesh@gmail.com  |
+|  2 | suresh     | Reddy     | Ashok nagar  | hyderabad | telangana      | 500069  | 9070012345   | suresh2@gmail.com |
+|  3 | dinesh     | kumar     | subhas nagar | guntur    | Andhra pradesh | 500903  | 9060612345   | dinesh@gmail.com  |
++----+------------+-----------+--------------+-----------+----------------+---------+--------------+-------------------+
+3 rows in set (0.01 sec)
+
+mysql> delete from address_book where first_name = "suresh";
+Query OK, 1 row affected (0.02 sec)
+
+mysql> select * from address_book;
++----+------------+-----------+--------------+---------+----------------+---------+--------------+------------------+
+| id | first_name | last_name | address      | city    | State          | zip     | phone_number | Email            |
++----+------------+-----------+--------------+---------+----------------+---------+--------------+------------------+
+|  1 | ramesh     | kulkarni  | madhuraNagar | chennai | tamil nadu     | 5000093 | 9080712334   | ramesh@gmail.com |
+|  3 | dinesh     | kumar     | subhas nagar | guntur  | Andhra pradesh | 500903  | 9060612345   | dinesh@gmail.com |
++----+------------+-----------+--------------+---------+----------------+---------+--------------+------------------+
+2 rows in set (0.01 sec)
