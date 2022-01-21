@@ -1,0 +1,33 @@
+mysql> select first_name from address_book where city like 'g%' order by first_name;
++------------+
+| first_name |
++------------+
+| dinesh     |
++------------+
+1 row in set (0.01 sec)
+
+mysql> select first_name from address_book where city like 'h%' order by first_name;
++------------+
+| first_name |
++------------+
+| rajshekar  |
++------------+
+1 row in set (0.00 sec)
+
+mysql> select first_name from address_book where city like 'k%' order by first_name;
++------------+
+| first_name |
++------------+
+| murali     |
++------------+
+1 row in set (0.00 sec)
+
+mysql> select first_name from address_book where city like '%k%' order by first_name;
++------------+
+| first_name |
++------------+
+| murali     |
++------------+
+1 row in set (0.00 sec)
+
+mysql>
